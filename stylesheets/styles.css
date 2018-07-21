@@ -1,0 +1,47 @@
+@import 'variables.css';
+@import 'base/index.css';
+@import 'layouts/index.css';
+@import 'elements/index.css';
+@import 'components/index.css';
+
+@import 'themes/theme.css';
+
+
+
+
+/*Global style*/
+
+body {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, a, .button {
+	text-transform: uppercase;
+}
+
+.button-inverse {
+	background: var(--button-background);
+	color: var(--button-inverse-color);
+}
+
+.button-inverse:hover {
+	text-decoration: none;
+	background: var(--button-inverse-background-hover);
+	color: var(--button-color-hover);
+}
+
+.heading-inverse{
+	color: var(--base-heading-inverse-color);
+}
+
+
+.heading-inverse-border::after{
+	content: "";
+	width: 170px;
+	display: block;
+	height: 2px;
+	left: 0;
+	margin: 18px auto 20px;
+	background-color: var(--global-link-hover-color);
+}
+
