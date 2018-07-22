@@ -22,7 +22,7 @@ button,
 input[type="button"],
 input[type="submit"],
 .button {
-  margin: 0;
+  margin: 20px;
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -78,4 +78,7 @@ input[type="submit"],
 .button:disabled {
   pointer-events: none;
   opacity: 0.45;
+}
+button:focus{
+  outline: none;
 }

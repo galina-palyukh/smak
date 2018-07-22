@@ -1,5 +1,5 @@
 header {
-    background-color: #122a2f;
+    background-color: var(--global-secondary-background);
 }
 
 .navbar {
