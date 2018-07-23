@@ -13,6 +13,8 @@
     --global-link-color: #fff;
     --global-link-hover-color: #ffe600;
 
+    --global-inverse-link-color: #515151;
+
     --global-background: #fff;
     --global-inverse-background: #131a1d;
 
@@ -69,6 +71,9 @@
 
     --base-heading-inverse-color: #fff;
     --base-heading-primary-color: #ffe600;
+    --base-heading-secondary-color: #515151;
+
+
 
     --base-heading-text-transform: uppercase;
     --base-heading-margin-top: var(--global-margin);
@@ -76,13 +81,13 @@
     --base-h1-font-size: 65px;
     --base-h1-line-height: 1.2;
 
-    --base-h2-font-size: 50px;
+    --base-h2-font-size: 45px;
     --base-h2-line-height: 1.3;
 
-    --base-h3-font-size: 40px;
+    --base-h3-font-size: 30px;
     --base-h3-line-height: 1.4;
 
-    --base-h4-font-size: 30px;
+    --base-h4-font-size: 25px;
     --base-h4-line-height: 1.4;
 
     --base-h5-font-size: 20px;
@@ -127,8 +132,8 @@
     --button-primary-background: #ffe600;
 
 
-    --button-color-hover: #ffe600;
-    --button-background-hover: #131316;
+    --button-color-hover: #fff;
+    --button-background-hover: #ffe600;
 
     --button-inverse-color-hover: #131316;
     --button-inverse-background-hover: #ffe600;
@@ -143,7 +148,7 @@
 
     --button-font-size-inverse: 15px;
 
-    --button-padding: 18px 50px;
+    --button-padding: 16px 40px;
     --button-height: var(--global-control-height);
 
     /*--button-color-focus: #222;*/
@@ -222,6 +227,7 @@ input[type="submit"],
     text-decoration: none;
     background: var(--button-background);
     color: var(--button-color);
+    cursor: pointer;
 }
 
 
@@ -248,6 +254,7 @@ input[type="submit"],
 .button-inverse {
     background: var(--button-inverse-background);
     color: var(--button-inverse-color);
+    font-weight: normal;
 }
 
 .button-inverse:hover {
@@ -260,6 +267,7 @@ input[type="submit"],
 .button-primary{
     background: var(--button-primary-background);
     color: var(--button-primary-color);
+    font-weight: normal;
 }
 
 .button-primary:hover{
@@ -285,6 +293,10 @@ input[type="submit"],
     color: var(--base-heading-primary-color);
 }
 
+.heading-secondary{
+    color: var(--base-heading-secondary-color);
+    text-transform: capitalize;
+}
 
 .heading-inverse-border::after{
     content: "";
@@ -311,6 +323,18 @@ input[type="submit"],
 }
 section{
     padding: 50px 0;
+}
+
+.inverse-link{
+    color: var(--global-inverse-link-color);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 @media screen and (max-width: 768px) {

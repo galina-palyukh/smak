@@ -17,7 +17,8 @@ header {
 }
 
 .navbar-nav > li {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav > li > a {
@@ -25,37 +26,35 @@ header {
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 23px;
+
 }
 
 .navbar-nav > li:last-child a {
     margin-right: 0;
 }
 
-.navbar-nav > li:first-child a {
-    margin-left: 0;
-}
 
-/*.navbar-nav > li:not(last-child) a{*/
-/*margin-right: 23px;*/
-/*}*/
-
-/*.navbar-nav > li:not(first-child) a {*/
-/*margin-left: 23px;*/
-
-/*}*/
-
-.navbar-nav li:not(:last-child)::after {
-    content: '';
+.square {
     width: 5px;
     height: 5px;
     background-color: var(--global-link-hover-color);
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    right: -5px;
+    margin-right: 23px;
+
 }
+
+/*.navbar-nav li:not(:last-child)::after {*/
+    /*content: '';*/
+    /*width: 5px;*/
+    /*height: 5px;*/
+    /*background-color: var(--global-link-hover-color);*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%);*/
+    /*right: -5px;*/
+/*}*/
+
+
 
 .navbar-nav > li > a.is-active,
 .navbar-nav > li > a:active,
