@@ -1,0 +1,42 @@
+.grid-about {
+    flex-direction: row;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.grid-about .grid-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% / 2);
+}
+
+
+.card-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-about .card-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--global-link-hover-color);
+    color: var(--global-link-color);
+    border-radius: 50%;
+    margin-right: 25px;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+
+.card-about .card-body h6{
+    margin-bottom: 10px;
+
+}
+.card-about .card-body p{
+    margin-top: 0;
+
+}

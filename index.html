@@ -875,8 +875,82 @@
 
 </section>
 
+<section class="about section">
+    <div class="container">
+        <div class="container-text">
+            <div class="sup-heading">about us</div>
+            <h3>WHO WE ARE</h3>
+            <hr class="separator">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis
+                porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor
+                accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl
+                tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellen
+                tesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt ni dictum porta.</p>
+
+        </div>
+
+        <div class="grid grid-about">
+            <div class="grid-item">
+                <div class="card-about">
+                    <div class="card-left">
+                        <span class="icon-alarm"></span>
+                    </div>
+                    <div class="card-body">
+                        <h6>ON TIME PROJECTS</h6>
+                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit
+                            aliquet elit, eget tincidunt ni dictum porta.Cras ultricies ligula sed magna dictum est
+                            ontar des lorem ipsum.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card-about">
+                    <div class="card-left">
+                        <span class="icon-lifebuoy"></span>
+                    </div>
+                    <div class="card-body">
+                        <h6>FULLY SUPPORT</h6>
+                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit
+                            aliquet elit, eget tincidunt ni dictum porta.Cras ultricies ligula sed magna dictum est
+                            ontar des lorem ipsum.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card-about">
+                    <div class="card-left">
+                        <span class="icon-thumbs-o-up"></span>
+                    </div>
+                    <div class="card-body">
+                        <h6>PROFESSIONAL EXPERIENCE</h6>
+                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit
+                            aliquet elit, eget tincidunt ni dictum porta.Cras ultricies ligula sed magna dictum est
+                            ontar des lorem ipsum.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card-about">
+                    <div class="card-left">
+                        <span class="icon-bubbles2"></span>
+                    </div>
+                    <div class="card-body">
+                        <h6>COMMUNICATIVE TEAM</h6>
+                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit
+                            aliquet elit, eget tincidunt ni dictum porta.Cras ultricies ligula sed magna dictum est
+                            ontar des lorem ipsum.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+</section>
 
 
 <script src="js/jquery.min.js"></script>
@@ -888,11 +962,6 @@
 <script src="js/jquery.mg-space.js"></script>
 
 <script>
-
-
-
-
-
 
 
     $(function () {
@@ -930,11 +999,11 @@
     });
 
 
-    $('.grid-statistic').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+    $('.grid-statistic').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $(this).find('.card-number').each(function () {
                 var $this = $(this);
-                $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                $({Counter: 0}).animate({Counter: $this.text()}, {
                     duration: 2000,
                     easing: 'swing',
                     step: function () {
