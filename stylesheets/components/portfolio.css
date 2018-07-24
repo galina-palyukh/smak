@@ -158,6 +158,26 @@
     opacity: .5;
 }
 
+
+
+
+.portfolio-like .btn-scrolldown{
+    margin-bottom: 60px;
+    margin-top: 25px;
+}
+
+
+.portfolio-like{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
 @media all and (max-width: 992px) {
 
     .mg-targets-text {

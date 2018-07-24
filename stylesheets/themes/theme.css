@@ -8,8 +8,6 @@
     --global-inverse-color: #fff;
     --global-primary-color: #131a1d;
 
-    /*--global-muted-color:                            ;*/
-
     --global-link-color: #fff;
     --global-link-hover-color: #ffe600;
 
@@ -19,9 +17,6 @@
     --global-inverse-background: #131a1d;
 
     /*--global-muted-background:                       #fbfbfb;*/
-
-    /*--global-inverse2-background:                    #11343a;*/
-    /*--global-inverse3-background:                    #122a2f;*/
 
     --global-primary-background: #11343a;
     --global-secondary-background: #122a2f;
@@ -65,15 +60,13 @@
     --base-margin-vertical: var(--global-margin);
 
     --base-heading-font-family: var(--global-font-family);
-    --base-heading-font-weight: normal;
+    --base-heading-font-weight: bold;
 
     --base-heading-color: #000;
 
     --base-heading-inverse-color: #fff;
     --base-heading-primary-color: #ffe600;
     --base-heading-secondary-color: #515151;
-
-
 
     --base-heading-text-transform: uppercase;
     --base-heading-margin-top: var(--global-margin);
@@ -131,7 +124,6 @@
     --button-primary-color: #fff;
     --button-primary-background: #ffe600;
 
-
     --button-color-hover: #fff;
     --button-background-hover: #ffe600;
 
@@ -140,7 +132,6 @@
 
     --button-primary-color-hover: #fff;
     --button-primary-background-hover: #131316;
-
 
     --button-font-family: inherit;
     --button-font-size: 20px;
@@ -206,7 +197,7 @@ button,
 input[type="button"],
 input[type="submit"],
 .button {
-    margin: 20px;
+    margin: 10px;
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -230,13 +221,11 @@ input[type="submit"],
     cursor: pointer;
 }
 
-
 .button:hover {
     text-decoration: none;
     background: var(--button-background-hover);
     color: var(--button-color-hover);
 }
-
 
 .button:focus {
     outline: none;
@@ -250,7 +239,6 @@ input[type="submit"],
     color: var(--button-color-active);
 }
 
-
 .button-inverse {
     background: var(--button-inverse-background);
     color: var(--button-inverse-color);
@@ -263,19 +251,18 @@ input[type="submit"],
     color: var(--button-inverse-color-hover);
 }
 
-
-.button-primary{
+.button-primary {
     background: var(--button-primary-background);
     color: var(--button-primary-color);
     font-weight: normal;
 }
 
-.button-primary:hover{
+.button-primary:hover {
     background: var(--button-primary-background-hover);
     color: var(--button-primary-color-hover);
 }
 
-.inverse-section{
+.inverse-section {
     color: #fff;
     background-color: var(--global-inverse-background);
 }
@@ -286,19 +273,21 @@ input[type="submit"],
     margin-right: auto;
     margin-left: auto;
 }
-.heading-inverse{
+
+.heading-inverse {
     color: var(--base-heading-inverse-color);
 }
-.heading-primary{
+
+.heading-primary {
     color: var(--base-heading-primary-color);
 }
 
-.heading-secondary{
+.heading-secondary {
     color: var(--base-heading-secondary-color);
     text-transform: capitalize;
 }
 
-.heading-inverse-border::after{
+.heading-inverse-border::after {
     content: "";
     width: 170px;
     display: block;
@@ -307,25 +296,28 @@ input[type="submit"],
     margin: 18px auto 20px;
     background-color: var(--global-link-hover-color);
 }
-.container-text{
+
+.container-text {
     max-width: 960px;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.section{
+
+.section {
     background-color: var(--global-background);
 }
 
-.section-inverse{
+.section-inverse {
     background-color: var(--global-inverse-background);
     color: var(--global-inverse-color);
 }
-section{
-    padding: 50px 0;
+
+section {
+    padding: 60px 0;
 }
 
-.inverse-link{
+.inverse-link {
     color: var(--global-inverse-link-color);
 }
 
@@ -337,14 +329,22 @@ section{
     bottom: 0;
 }
 
+.btn-scrolldown {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+}
+
 @media screen and (max-width: 768px) {
     h1, .h1 {
         font-size: 40px;
     }
+
     h4, .h4 {
         font-size: 23px;
     }
-
 
     h1, h2, h3, h4, h5, h6 {
         margin: 0 0 20px 0;
@@ -358,10 +358,17 @@ section{
         font-size: 16px;
         min-height: 40px;
     }
+
+    .btn-scrolldown {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+
+    }
 }
 
 .layout,
-.grid{
+.grid {
     display: flex;
     flex-wrap: wrap;
 }
