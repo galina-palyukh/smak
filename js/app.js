@@ -8,3 +8,15 @@ function closeNav() {
     document.getElementById("mobile-nav").style.width = "0";
     $('.mob_menu_bg').removeClass('show');
 }
+
+
+
+
+$(function(){
+    $('.team-detailed-btn').on('click', function(e){
+        e.preventDefault();
+        var item = $(this).closest('.active');
+        $(item).removeClass('active');
+
+    });
+});

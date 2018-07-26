@@ -5,6 +5,7 @@
 
     --global-color: #707070;
 
+
     --global-inverse-color: #fff;
     --global-primary-color: #131a1d;
 
@@ -16,7 +17,7 @@
     --global-background: #fff;
     --global-inverse-background: #131a1d;
 
-    /*--global-muted-background:                       #fbfbfb;*/
+    --global-muted-background:   #fbfbfb;
 
     --global-primary-background: #11343a;
     --global-secondary-background: #122a2f;
@@ -157,9 +158,9 @@
     --form-padding: 6px 14px;
 
     --form-background: transparent;
-    --form-color: var(--global-color);
+    --form-color: #fff;
 
-    --form-focus-background: #fbfbfb;
+    --form-focus-background: #fff;
     --form-focus-color: var(--global-color);
 
     --form-disabled-background: var(--global-color);
