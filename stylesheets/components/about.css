@@ -41,3 +41,15 @@
     margin-top: 0;
 
 }
+
+
+@media all and (max-width: 640px){
+    .grid-about {
+        flex-direction: column;
+        margin: 0;
+    }
+    .grid-about .grid-item {
+        width: 100%;
+        padding: 0;
+    }
+}

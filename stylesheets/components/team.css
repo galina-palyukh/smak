@@ -1,5 +1,6 @@
 section.team {
     background-color: var(--global-muted-background);
+    padding-bottom: 0;
 }
 
 .grid-team {
@@ -12,6 +13,7 @@ section.team {
     padding-left: 15px;
     padding-right: 15px;
     width: calc(100% / 4);
+    margin-bottom: 60px;
 }
 
 .card-team {
@@ -19,6 +21,10 @@ section.team {
     flex-direction: column;
     cursor: pointer;
 
+}
+
+.card-team .card-body{
+    text-align: center;
 }
 
 
@@ -46,7 +52,7 @@ section.team {
     background-color: #131316;
     color: var(--global-inverse-color);
     padding: 60px 0 15px 0;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     display: none;
 }
 
@@ -99,13 +105,9 @@ section.team {
 }
 
 
-/*.team-detailed::before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*top: -25px;*/
-    /*width: 0;*/
-    /*height: 0;*/
-    /*border-left: 30px solid transparent;*/
-    /*border-right: 30px solid transparent;*/
-    /*border-bottom: 25px solid #131316;*/
-/*}*/
+@media all and (max-width: 768px){
+    .grid-team .grid-item {
+        width: calc(100% / 2);
+        margin-bottom: 30px;
+    }
+}

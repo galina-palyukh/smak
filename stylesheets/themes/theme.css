@@ -137,7 +137,7 @@
     --button-primary-background-hover: #131316;
 
     --button-font-family: inherit;
-    --button-font-size: 20px;
+    --button-font-size: 16px;
     --button-font-weight: bold;
 
     --button-font-size-inverse: 15px;
@@ -160,13 +160,15 @@
     --form-background: transparent;
     --form-color: #fff;
 
+    --form-border-color: var(--global-inverse-color);
+
     --form-focus-background: #fff;
     --form-focus-color: var(--global-color);
 
     --form-disabled-background: var(--global-color);
     --form-disabled-color: var(--global-muted-color);
 
-    --form-placeholder-color: var(--global-muted-color);
+    --form-placeholder-color: var(--global-inverse-color);
 
     --form-invalid-color: var(--global-danger-background);
     --form-valid-color: var(--global-success-background);
@@ -194,6 +196,58 @@
     --form-icon-color: var(--global-muted-color);
     --form-icon-hover-color: var(--global-color);
 
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder,
+select:focus::placeholder{
+    color: var(--global-primary-color);
+    opacity: 1;
+}
+
+
+input:not([type]):focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=file]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type="month"]:focus,
+input[type=week]:focus,
+input[type=text]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+textarea:focus,
+select:focus {
+    background: var(--form-focus-background);
+    color: var(--global-primary-color);
+}
+
+
+
+
+
+
+input:not([type]),
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type="month"],
+input[type=week],
+input[type=text],
+input[type=time],
+input[type=url],
+textarea,
+select {
+    border: 1px solid var(--form-border-color);
 }
 
 button,
@@ -343,7 +397,7 @@ section {
     padding: 0;
     margin: 0;
     width: 60px;
-    height: 60px;
+    min-height: 60px;
     font-size: 28px;
 }
 

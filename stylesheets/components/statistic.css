@@ -32,3 +32,11 @@
     color: var(--global-link-hover-color);
 
 }
+
+@media all and (max-width: 768px){
+
+    .grid-statistic .grid-item {
+        width: calc(100% / 2);
+        margin-bottom: 30px;
+    }
+}

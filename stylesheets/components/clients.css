@@ -1,0 +1,37 @@
+
+.grid-clients{
+    margin-bottom: 40px;
+}
+.grid-clients *:focus{
+    outline: none;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+.grid-item img{
+    margin: auto;
+}
+
+
+
+.clients-active {
+    display: flex;
+    justify-content: center;
+}
+
+
+.clients-active .btn-left,
+.clients-active .btn-right {
+    padding: 0;
+    margin: 0;
+    width: 34px;
+    min-height: 34px;
+    font-size: 22px;
+}
+.clients-active .btn-left{
+    margin-right: 30px;
+}

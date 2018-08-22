@@ -12,6 +12,7 @@
 .portfolio-navigation > li {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .portfolio-navigation > li > a {
