@@ -13,7 +13,9 @@
 }
 
 .hero-background {
-    background-color:var(--global-primary-background) ;
+    background: var(--global-primary-background) url("../../img/hero.jpg")  center center no-repeat;
+    background-size: cover;
+    /*background-color:var(--global-primary-background) ;*/
     position: absolute;
     left: 0;
     right: 0;
